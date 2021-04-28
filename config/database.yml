@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
-  password: <%= ENV['coinwork0428'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
 
 development:
@@ -51,4 +51,4 @@ production:
   <<: *default
   database: space_coinwork0425_production
   username: space_coinwork0425
-  password: <%= ENV['SPACE_COINWORK0425_coinwork0428'] %>
+  password: <%= ENV['SPACE_COINWORK0425_DATABASE_PASSWORD'] %>
