@@ -33,7 +33,7 @@ run_once = true
 
 before_fork do |server, worker|
   defined?(ActiveRecord::Base) &&
-
+    ActiveRecord::Base.connection.disconnect!
 
   if run_once
     run_once = false # prevent from firing again
