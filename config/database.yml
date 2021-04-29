@@ -51,4 +51,4 @@ production:
   <<: *default
   database: space_coinwork0425_production
   username: root
-  password: coinwork0428
+  password: <%= ENV['SPACE_COINWORK0425_DATABASE_PASSWORD'] %>
