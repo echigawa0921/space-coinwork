@@ -36,7 +36,7 @@ body {
 }
 .first-view {
   margin-top: 20px;
-  background-image:url("images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+  background-image: url(<%= asset_path 'images/patrick-tomasso-GXXYkSwndP4-unsplash.jpg' %>);
   background-size: cover;
   background-position: center;
   height: 750px;
