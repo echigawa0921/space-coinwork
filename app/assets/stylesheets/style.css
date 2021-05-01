@@ -81,7 +81,7 @@ body {
   margin: 0 100px 0 100px;
 }
 .service-card1 {
-  background-image: url("<%= asset_path './images/canva-photo-editor.pc.png' %>");
+  background-image:url("./images/canva-photo-editor.pc.png");
   background-size: 500px;
   background-size: cover;
   background-position: center;
