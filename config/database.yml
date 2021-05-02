@@ -52,4 +52,5 @@ production:
   <<: *default
   database: space_coinwork0425_production
   username: root
-  password: <%= ENV['SPACE_COINWORK0425_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
